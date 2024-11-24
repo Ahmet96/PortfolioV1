@@ -1,0 +1,17 @@
+#This Docker setup attempted to upgrade Angular from version 18.0 to 18.1. This automation file will be used for future major upgrades to later versions.
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install -g npm-check-updates
+
+#During the upgrade, zone.js was causing compatibility issues, so I excluded it from the upgrade process.
+RUN npx npm-check-updates "/^(?!zone\.js).*$/" -u && npm install --legacy-peer-deps
+
+RUN npm install -g @angular/cli@latest
+
+COPY . .
+
+CMD ["sh", "-c", "ng version && echo 'Upgraded done!'"]

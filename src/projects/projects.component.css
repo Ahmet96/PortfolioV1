@@ -1,0 +1,33 @@
+.background-color {
+    background-color: #f0f8ff;
+    width:100%;
+}
+
+.first-project, .second-project {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.first-project {
+  background-image: url('../images//Mckenzie\ Resort\ Hotel\ .png'); 
+}
+
+.second-project {
+  background-image: url('../images/second-project.png'); 
+}
+
+.first-project-wrapper, .second-project-wrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  max-width: 800px; 
+}
+
+p {
+  margin: 0;
+}

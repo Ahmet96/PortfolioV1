@@ -1,0 +1,102 @@
+
+
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+} 
+
+.background {
+  background-color: #71C9CE;
+  position: relative;
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1; 
+}
+
+.myName, .title {
+  position: relative; 
+  z-index: 3;
+  color: white;
+  text-align: center;
+}
+
+.myName {
+  top: 20%;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  top: 20%;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.animated-background {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+  pointer-events: none; 
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: move 10s infinite ease-in-out;
+}
+
+@keyframes move {
+  0% {
+      transform: translateY(100vh) translateX(0);
+      opacity: 0.2;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      transform: translateY(-100vh) translateX(100px);
+      opacity: 0;
+  }
+}
+
+.circle:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.circle:nth-child(3) {
+  left: 50%;
+  animation-delay: 4s;
+}
+
+.circle:nth-child(4) {
+  left: 70%;
+  animation-delay: 6s;
+}
+
+.circle:nth-child(5) {
+  left: 90%;
+  animation-delay: 8s;
+}
+
+

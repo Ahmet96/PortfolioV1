@@ -1,0 +1,89 @@
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.background-color {
+    background-color: #f0f8ff;
+    width:100%;
+
+}
+
+.background-image {
+    background-image: url('../images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg');
+    background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+    width: 100%; /* Elementin genişliğini ayarlar */
+    height: 800px; /* Elementin yüksekliğini ayarlar */
+    opacity: 0.7;
+    
+}
+
+.horizontal-timeline .items {
+    border-top: 3px solid #e9ecef;
+  }
+  
+  .horizontal-timeline .items .items-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+  }
+  
+  .horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+  }
+  
+  .horizontal-timeline .items .items-list .event-date {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding-top: 8px;
+  }
+  
+  @media (min-width: 1140px) {
+    .horizontal-timeline .items .items-list {
+      display: inline-block;
+      width: 24%;
+      padding-top: 45px;
+    }
+  
+    .horizontal-timeline .items .items-list .event-date {
+      top: -40px;
+    }
+  }
+
+  .education-line {
+    width: 50%; /* Çizginin uzunluğunu %50 olarak ayarlar */
+    margin: 0 auto; /* Çizgiyi yatay olarak ortalar */
+  }
+
+  .button-custom {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px; /* Yuvarlak kenarlar için */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-custom:hover {
+    background-color: #0056b3; /* Hover için koyulaşan renk */
+    transform: scale(1.05); /* Hover etkisinde hafif büyüme */
+}
+
+.button-custom:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Odaklandığında gölge efekti */
+}

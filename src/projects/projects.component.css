@@ -14,11 +14,11 @@
 
 
 .first-project {
-  background-image: url('../images//Mckenzie\ Resort\ Hotel\ .png'); 
+  background-image: url('../assets/images/Mckenzie\ Resort\ Hotel\ .png'); 
 }
 
 .second-project {
-  background-image: url('../images/second-project.png'); 
+  background-image: url('../assets/images/second-project.png'); 
 }
 
 .first-project-wrapper, .second-project-wrapper {

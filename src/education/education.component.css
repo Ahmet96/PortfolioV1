@@ -10,14 +10,7 @@ h2 {
 
 }
 
-.background-image {
-    background-image: url('../images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg');
-    background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
-    width: 100%; /* Elementin genişliğini ayarlar */
-    height: 800px; /* Elementin yüksekliğini ayarlar */
-    opacity: 0.7;
-    
-}
+
 
 .horizontal-timeline .items {
     border-top: 3px solid #e9ecef;

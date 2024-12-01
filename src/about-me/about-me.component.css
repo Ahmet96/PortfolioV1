@@ -77,36 +77,36 @@ h2 {
 }
 
 .cv-download-btn {
-  background-color: #007BFF; /* Primary blue */
-  color: #fff; /* White text */
-  padding: 12px 25px; /* Daha geniş padding */
-  border: none; /* Kenar çerçevesini kaldır */
-  border-radius: 25px; /* Yuvarlak kenarlar */
-  cursor: pointer; /* Tıklanabilir işaretçi */
-  font-size: 18px; /* Daha büyük yazı tipi */
-  font-family: 'Arial', sans-serif; /* Modern bir yazı tipi */
-  font-weight: bold; /* Kalın yazı */
-  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); /* Hafif gölge */
-  transition: all 0.3s ease; /* Hover geçiş animasyonu */
-  display: inline-block; /* İçerik kadar genişlik */
-  text-decoration: none; /* Varsayılan bağlantı stilini kaldır */
+  width: 30%;
+  background-color: #007BFF; 
+  color: #fff; 
+  padding: 12px 25px;
+  border: none; 
+  border-radius: 25px; 
+  cursor: pointer; 
+  font-size: 18px; 
+  font-family: 'Arial', sans-serif; 
+  font-weight: bold; 
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); 
+  transition: all 0.3s ease; 
+  display: inline-block; 
+  text-decoration: none; 
 }
 
 .cv-download-btn:hover {
-  background-color: #0056b3; /* Daha koyu mavi */
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5); /* Hover sırasında gölge artışı */
-  transform: translateY(-2px); /* Hafif yukarı hareket */
+  background-color: #0056b3; 
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5); 
+  transform: translateY(-2px); 
 }
 
 .cv-download-btn:active {
-  transform: translateY(2px); /* Tıklama sırasında aşağı hareket */
-  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2); /* Daha düşük gölge */
+  transform: translateY(2px); 
+  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2); 
 }
-
 
 .cv-download-btn a {
   text-decoration: none;
-  color: inherit; /* Inherit color from button */
+  color: inherit; 
 }
 
 

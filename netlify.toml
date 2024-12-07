@@ -1,5 +1,5 @@
 [build]
-    base = "cv"
+    base = "PortfolioV1"
     command = "npm run build:prod"
     publish = "dist/browser"
 

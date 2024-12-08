@@ -115,5 +115,9 @@ h2 {
     width: 100%; 
     padding: 15px; 
   }
+
+  .cv-download-btn {
+    width: auto;
+  }
 }
 

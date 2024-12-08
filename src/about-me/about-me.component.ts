@@ -1,16 +1,17 @@
 import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css',
   providers: [DatePipe]
 })
+
 export class AboutMeComponent {
   name: string = 'Ahmet Ozturk Sakalli';
   jobTitle: string = 'Software Developer';
@@ -34,21 +35,6 @@ export class AboutMeComponent {
     const codingDate = this.codingDate.getFullYear();
     return today - codingDate;
   }
-
-  downloadPDF() {
-    const pdfUrl = "../assets/ahmetozturksakallicv.pdf";
-    const pdfName = 'dokuman.pdf';
-    this.http.get(pdfUrl, { responseType: 'blob' as 'json' }).subscribe((response: any) => {
-      const blob = new Blob([response], { type: 'application/pdf' });
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.setAttribute('style', 'display:none');
-      document.body.appendChild(a);
-      a.href = url;
-      a.download = pdfName;
-      a.click();
-    });
-  }
   
-
 }
+    

@@ -56,8 +56,8 @@ h2 {
   }
 
   .education-line {
-    width: 50%; /* Çizginin uzunluğunu %50 olarak ayarlar */
-    margin: 0 auto; /* Çizgiyi yatay olarak ortalar */
+    width: 50%; 
+    margin: 0 auto; 
   }
 
   .button-custom {
@@ -67,16 +67,16 @@ h2 {
     padding: 12px 24px;
     font-size: 14px;
     font-weight: bold;
-    border-radius: 50px; /* Yuvarlak kenarlar için */
+    border-radius: 50px; 
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button-custom:hover {
-    background-color: #0056b3; /* Hover için koyulaşan renk */
-    transform: scale(1.05); /* Hover etkisinde hafif büyüme */
+    background-color: #0056b3; 
+    transform: scale(1.05); 
 }
 
 .button-custom:focus {
     outline: none;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Odaklandığında gölge efekti */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); 
 }

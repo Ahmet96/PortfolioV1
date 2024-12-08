@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod":"ng build --configuration=production",
+    "build:prod": "ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:cv": "node dist/cv/server/server.mjs"
@@ -25,6 +25,7 @@
     "@aws-sdk/client-lambda": "^3.659.0",
     "@aws-sdk/credential-providers": "^3.658.1",
     "express": "^4.18.2",
+    "file-saver": "^2.0.5",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

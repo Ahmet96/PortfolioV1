@@ -8,8 +8,6 @@ h2 {
     background-color: #A6E3E9;
 }
 
-
-
 table {
     width: 100%;
     max-width: 800px;
@@ -17,7 +15,7 @@ table {
     border-collapse: collapse;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 th, td {

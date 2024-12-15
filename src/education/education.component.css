@@ -7,10 +7,7 @@ h2 {
 .background-color {
     background-color: #f0f8ff;
     width:100%;
-
 }
-
-
 
 .horizontal-timeline .items {
     border-top: 3px solid #e9ecef;
@@ -25,7 +22,6 @@ h2 {
   }
   
   .horizontal-timeline .items .items-list:before {
-    content: "";
     position: absolute;
     height: 36px;
     border-right: 2px dashed #dee2e6;
@@ -41,18 +37,6 @@ h2 {
     margin: 0 auto;
     font-size: 0.9rem;
     padding-top: 8px;
-  }
-  
-  @media (min-width: 1140px) {
-    .horizontal-timeline .items .items-list {
-      display: inline-block;
-      width: 24%;
-      padding-top: 45px;
-    }
-  
-    .horizontal-timeline .items .items-list .event-date {
-      top: -40px;
-    }
   }
 
   .education-line {
@@ -79,4 +63,16 @@ h2 {
 .button-custom:focus {
     outline: none;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); 
+}
+
+@media (min-width: 1140px) {
+  .horizontal-timeline .items .items-list {
+    display: inline-block;
+    width: 24%;
+    padding-top: 45px;
+  }
+
+  .horizontal-timeline .items .items-list .event-date {
+    top: -40px;
+  }
 }

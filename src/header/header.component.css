@@ -18,11 +18,13 @@
   z-index: 1; 
 }
 
+
 .myName, .title {
   position: relative; 
   z-index: 3;
   color: white;
   text-align: center;
+  opacity: 0; 
 }
 
 .myName {
@@ -30,6 +32,7 @@
   font-size: 3em;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInAndSlideDown 1.5s ease-out forwards;
 }
 
 .title {
@@ -37,7 +40,10 @@
   font-size: 2em;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  animation: fadeInAndSlideDown 1.5s ease-out forwards;
+  animation-delay: 0.5s; /* .myName'den sonra başlar */
 }
+
 
 .animated-background {
   position: fixed; 
@@ -71,6 +77,17 @@
   100% {
       transform: translateY(-100vh) translateX(100px);
       opacity: 0;
+  }
+}
+
+@keyframes fadeInAndSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
   }
 }
 
